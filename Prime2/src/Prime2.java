@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Prime2 {
 	static boolean primeCheck(int num){
 		boolean flag = false;
-		boolean prime;
+		// boolean prime;
 		int i;
 		for (i = 2; i <= num/2; ++i){
 			if (num % i == 0){
@@ -14,9 +14,9 @@ public class Prime2 {
 		}
 		
 		if (!flag)
-			return prime = true;
+			return true;
 		else
-			return prime = false;
+			return false;
 	}
 	
 	public static void main(String[] args){
@@ -34,5 +34,6 @@ public class Prime2 {
 		else
 			System.out.println(num + " is a prime number.");
 		
+		userInput.close();
 	}
 }
